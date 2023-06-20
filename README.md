@@ -16,7 +16,8 @@ If a GPU is present, it builds both versions for CPU and GPU.
 Two functions are exposed (look at example.py):
 - **editdistance()** that compares two numpy arrays elementwise.
 - **editdistance1N()** that compares one word with all the elements of a numpy array.
-  
+Both functions return a numpy array [:,2]: the first column contains the simple Edit Distance with Wildcards and the second the corresponding normalised version. 
+
 Tested on:
 - CUDA 11.4
 - python 3.7
