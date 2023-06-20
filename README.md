@@ -5,7 +5,7 @@ It allows for two wildcards: '?' means any single symbol and '*' means any seque
 
 ## For building and testing:
 ```
-    git clone https://github.com/ftamburin/EditDistanceWild/tree/main
+    git clone https://github.com/ftamburin/EditDistanceWild
     cd EditDistanceWild
     python3 setup.py install
     python3 test/example.py
