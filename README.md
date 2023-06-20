@@ -14,8 +14,8 @@ If a GPU is present, it builds both versions for CPU and GPU.
 
 ## API
 Two functions are exposed (look at example.py):
-- **editdistance** that compares two numpy arrays elementwise.
-- **editdistance1N** that compares one word with all the elements of a numpy array.
+- **editdistance()** that compares two numpy arrays elementwise.
+- **editdistance1N()** that compares one word with all the elements of a numpy array.
   
 Tested on:
 - CUDA 11.4
