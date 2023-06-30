@@ -16,8 +16,8 @@ If a GPU is present, it builds both versions for CPU and GPU.
 Two functions are exposed (look at example.py):
 - **editdistance(x,y,pad,wID,wS)** that compares two padded pytorch tensors (**x** and **y**) elementwise.
 - **editdistance1N(x,y,pad,wID,wS)** that compares a single word (as a pytorch tensor **x**) with all the elements of a padded pytorch tensor (**y**).
-**pad** represents the value used for padding
-**wID** and **wS*** are respectively the weigth for insertions/deletions and substitutions.
+
+Each word must be encoded as a sequence of integers by simply using the python **ord()*** function and the tensors must be padded to the longest word. **pad** represents the value used for padding. **wID** and **wS*** are respectively the weigth for insertions/deletions and substitutions.
 
 Both functions return a pytorch tensor [:,2]: the first column contains the simple Edit Distance with Wildcards and the second the corresponding normalised version. 
 
