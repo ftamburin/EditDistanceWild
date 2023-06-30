@@ -14,10 +14,14 @@ If a GPU is present, it builds both versions for CPU and GPU.
 
 ## API
 Two functions are exposed (look at example.py):
-- **editdistance()** that compares two numpy arrays elementwise.
-- **editdistance1N()** that compares one word with all the elements of a numpy array.
+- **editdistance(x,y,pad,wID,wS)** that compares two padded pytorch tensors (**x** and **y**) elementwise.
+- **editdistance1N(x,y,pad,wID,wS)** that compares a single word (as a pytorch tensor **x**) with all the elements of a padded pytorch tensor (**y**).
+**pad** represents the value used for padding
+**wID** and **wS*** are respectively the weigth for insertions/deletions and substitutions.
 
-Both functions return a numpy array [:,2]: the first column contains the simple Edit Distance with Wildcards and the second the corresponding normalised version. 
+Both functions return a pytorch tensor [:,2]: the first column contains the simple Edit Distance with Wildcards and the second the corresponding normalised version. 
+
+Examine the file test.py in the example folder for any clarification.
 
 Tested on:
 - CUDA 11.4
