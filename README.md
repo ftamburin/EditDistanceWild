@@ -21,7 +21,7 @@ Each word must be encoded as a sequence of integers by simply using the python *
 
 Both functions return a pytorch tensor [:,2]: the first column contains the simple Edit Distance with Wildcards and the second the corresponding normalised version. 
 
-Examine the file test.py in the example folder for any clarification.
+Examine the file example.py in the 'test' folder for any clarification.
 
 Tested on:
 - CUDA 11.4
