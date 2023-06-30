@@ -13,7 +13,7 @@ It allows for two wildcards: '?' means any single symbol and '*' means any seque
 If a GPU is present, it builds both versions for CPU and GPU.
 
 ## API
-Two functions are exposed (look at example.py):
+Two functions are exposed:
 - **editdistance(x,y,pad,wID,wS)** that compares two padded pytorch tensors (**x** and **y**, same length) elementwise.
 - **editdistance1N(x,y,pad,wID,wS)** that compares a single word (as a pytorch tensor **x**) with all the elements of a padded pytorch tensor (**y**).
 
